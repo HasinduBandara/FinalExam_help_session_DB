@@ -1,0 +1,30 @@
+<html>
+<body>
+
+<form method = "POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+
+ 
+	<label>Name</label>
+	<input type ="text" name ="fname"> <br><br>
+	
+	<label>Address</label>
+	<input type ="text" name ="address"> <br><hr>
+	
+	
+	<input type = "submit" name ="btnsubmit" value = "submit"> <br>
+	</form>
+	<?php
+	
+		if (isset($_post["btnsubmit"]))
+		{
+			echo "name :  " .$_POST["fname"];
+			//echo "address : " . $_POST["address"];
+		
+		}
+	?>
+
+
+</body>
+</html>
+	
